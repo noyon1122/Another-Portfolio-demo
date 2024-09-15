@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --lighting-color: #0089b7;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: white;
+}
+body {
+  font-size: 1.4rem;
+}
+
+/* Header */
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+header {
+  background: var(--lighting-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.3rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-out;
+}
+
+/* Main */
+
+#main_container {
+  background: var(--dark-color);
+}
+
+.hero {
+  padding: 4rem 0;
+}
+
+#main_container .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_content {
+  display: grid;
+  align-items: center;
+}
+.hi_text {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #eeea6c;
+}
+.name {
+  font-size: 5rem;
+  font-weight: 500;
+}
+#main_container h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  overflow: hidden;
+  border-right: 0.15rem solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Projects Section */
+#projects {
+  background: var(--darker-color);
+}
+.proj_title {
+  padding: 4rem 0;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.card {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 4rem 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Last Section */
+
+#last {
+  background: var(--dark-color);
+}
+
+#last h1 {
+  text-align: center;
+  padding: 5rem;
+  font-size: 5rem;
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 3rem;
+}
+.icons h2 {
+  font-size: 2rem;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact i {
+  font-size: 2rem;
+  padding: 5px;
+}
+
+/* Footer */
+footer {
+  background: var(--darker-color);
+  padding: 3rem;
+  text-align: center;
+}
